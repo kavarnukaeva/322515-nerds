@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Каталог Nёrds</title>
   </head>
   <body>
     <header class="main-header">
@@ -13,12 +13,11 @@
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li class="site-navigation-current"><a href="#">Магазин</a></li>
+          <li><a class="site-navigation-current">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
       <div class="cart">
-        <span>Cart</span>
         <a href="#">Корзина</a>
       </div>
     </header>
@@ -29,29 +28,77 @@
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <!-- Здесь будет форма -->
       </section>
-      <section class="catalog">
-        <h2 class="visually-hidden">Каталог шаблонов</h2>
+      <section class="catalog-and-sorting">
+        <h2 class="visually-hidden">Каталог и сортировка</h2>
+        <div class="sorting">
+          <p>Сортировать:</p>
+          <ul class="sort-by">
+            <li class="sort-by-item"><a class="sort-by-item-current">По цене</a></li>
+            <li class="sort-by-item"><a href="#">По типу</a></li>
+            <li class="sort-by-item"><a href="#">По названию</a></li>
+            <li class="sort-by-item"><a class="sort-by-item-current">По убыванию</a></li>
+            <li class="sort-by-item"><a href="#">По возрастанию</a></li>
+          </ul>
+        </div>
+        <section class="catalog">
+          <h2 class="visually-hidden">Каталог шаблонов</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
               <img src="http://placehold.it/150x100" alt="Sedona">
-              <div>
+              <div class="catalog-item-info">
                 <h3><a href="#">Sedona</a></h3>
                 <p>Информационный сайт для туристов</p>
-                <button class="button">9 900 руб.</button>
+                <a class="button">9&thinsp;900 руб.</a>
               </div>
             </li>
-            <li class="catalog-item"><img src="http://placehold.it/150x100" alt="Pink"></li>
-            <li class="catalog-item"><img src="http://placehold.it/150x100" alt="Beard"></li>
-            <li class="catalog-item"><img src="http://placehold.it/150x100" alt="Mishka"></li>
-            <li class="catalog-item"><img src="http://placehold.it/150x100" alt="A+"></li>
-            <li class="catalog-item"><img src="http://placehold.it/150x100" alt="Кваст"></li>
+            <li class="catalog-item">
+              <img src="http://placehold.it/150x100" alt="Pink">
+              <div class="catalog-item-info">
+                <h3><a href="#">Pink App</a></h3>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <a class="button">9&thinsp;900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <img src="http://placehold.it/150x100" alt="Barbershop">
+              <div class="catalog-item-info">
+                <h3><a href="#">Barbershop</a></h3>
+                <p>Сайт салона красоты. Для мужчин, да.</p>
+                <a class="button">9&thinsp;900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <img src="http://placehold.it/150x100" alt="Mishka">
+              <div class="catalog-item-info">
+                <h3><a href="#">Mishka</a></h3>
+                <p>Интернет-магазин вязаных игрушек</p>
+                <a class="button">9&thinsp;900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <img src="http://placehold.it/150x100" alt="A+">
+              <div class="catalog-item-info">
+                <h3><a href="#">A Plus</a></h3>
+                <p>Лендинг курсов повышения квалификации</p>
+                <a class="button">9&thinsp;900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <img src="http://placehold.it/150x100" alt="Кваст">
+              <div class="catalog-item-info">
+                <h3><a href="#">Кваст</a></h3>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <a class="button">9&thinsp;900 руб.</a>
+              </div>
+            </li>
           </ul>
           <ul class="pagination-list">
-            <li class="pagination-item pagination-item-current"><a>1</a></li>
-            <li class="pagination-item"><a herf="#">2</a></li>
-            <li class="pagination-item"><a herf="#">3</a></li>
-            <li class="pagination-item"><a herf="#">Следующая</a></li>
+            <li class="pagination-item"><a class="pagination-item-current">1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">Следующая</a></li>
           </ul>
+        </section>
       </section>
     </main>
 
@@ -61,20 +108,18 @@
         <img class="map" src"http://placehold.it/150x100">
         <div class="contact-info">
           <p>Nёrds design studio</p>
-          <p>191186, Санкт-Петербург,<br>
-             ул. Б. Конюшенная, д. 19/8<br>
-          </p>
-          <p>тел.+7(812)275-75-75</p>
-          <button class="button">Напишите нам</button>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <a class="button" href="#">Напишите нам</a>
         </div>
       </section>
       <section class="social-info">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <div class="social">
-          <a class="social-btn" href="#">Вконтакте</a>
-          <a class="social-btn" href="#">Фейсбук</a>
-          <a class-"social-btn" href="#">Инстаграм</a>
-        </div>
+        <ul class="social">
+          <li><a class="social-btn" href="#">Вконтакте</a></li>
+          <li><a class="social-btn" href="#">Фейсбук</a></li>
+          <li><a class-"social-btn" href="#">Инстаграм</a></li>
+        </ul>
         <div class="discount-info">
           <p>Давайте дружить, это выгодно!</p>
           <p>Скидка 10% для друзей из социальных сетей.</p>
