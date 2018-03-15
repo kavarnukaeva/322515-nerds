@@ -5,6 +5,7 @@
     <title>Каталог Nёrds</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -74,7 +75,7 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button filter-button" type="submit">Показать</button>
+        <button class="button button-filter" type="submit">Показать</button>
       </form>
     </aside>
 
@@ -85,11 +86,11 @@
         <div class="sorting">
           <p>Сортировать:</p>
           <ul class="sort-by">
-            <li class="sort-by-item"><a class="sort-by-item-current">По цене</a></li>
-            <li class="sort-by-item"><a href="#">По типу</a></li>
-            <li class="sort-by-item"><a href="#">По названию</a></li>
-            <li class="sort-by-item"><a class="sort-by-item-current">По убыванию</a></li>
-            <li class="sort-by-item"><a href="#">По возрастанию</a></li>
+            <li><a class="sort-by-item sort-by-item-current">По цене</a></li>
+            <li><a class="sort-by-item" href="#">По типу</a></li>
+            <li><a class="sort-by-item" href="#">По названию</a></li>
+            <li><a class="sort-by-item sort-by-item-current">По убыванию</a></li>
+            <li><a class="sort-by-item" href="#">По возрастанию</a></li>
           </ul>
         </div>
         <section class="catalog">
@@ -100,7 +101,7 @@
               <div class="catalog-item-info">
                 <h3><a href="#">Sedona</a></h3>
                 <p>Информационный сайт для туристов</p>
-                <a class="button" href="#">9&thinsp;900 руб.</a>
+                <a class="button button-price" href="#">9&thinsp;900 руб.</a>
               </div>
             </li>
             <li class="catalog-item">
@@ -108,7 +109,7 @@
               <div class="catalog-item-info">
                 <h3><a href="#">Pink App</a></h3>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <a class="button" href="#">9&thinsp;900 руб.</a>
+                <a class="button button-price" href="#">9&thinsp;900 руб.</a>
               </div>
             </li>
             <li class="catalog-item">
@@ -116,7 +117,7 @@
               <div class="catalog-item-info">
                 <h3><a href="#">Barbershop</a></h3>
                 <p>Сайт салона красоты. Для мужчин, да.</p>
-                <a class="button" href="#">9&thinsp;900 руб.</a>
+                <a class="button button-price" href="#">9&thinsp;900 руб.</a>
               </div>
             </li>
             <li class="catalog-item">
@@ -124,7 +125,7 @@
               <div class="catalog-item-info">
                 <h3><a href="#">Mishka</a></h3>
                 <p>Интернет-магазин вязаных игрушек</p>
-                <a class="button" href="#">9&thinsp;900 руб.</a>
+                <a class="button button-price" href="#">9&thinsp;900 руб.</a>
               </div>
             </li>
             <li class="catalog-item">
@@ -132,7 +133,7 @@
               <div class="catalog-item-info">
                 <h3><a href="#">A Plus</a></h3>
                 <p>Лендинг курсов повышения квалификации</p>
-                <a class="button" href="#">9&thinsp;900 руб.</a>
+                <a class="button button-price" href="#">9&thinsp;900 руб.</a>
               </div>
             </li>
             <li class="catalog-item">
@@ -140,7 +141,7 @@
               <div class="catalog-item-info">
                 <h3><a href="#">Кваст</a></h3>
                 <p>Промо-сайт производителя крафтового кваса</p>
-                <a class="button" href="#">9&thinsp;900 руб.</a>
+                <a class="button button-price" href="#">9&thinsp;900 руб.</a>
               </div>
             </li>
           </ul>
@@ -161,7 +162,7 @@
         <div class="contact-info">
           <p>Nёrds design studio</p>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <a class="tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
           <a class="button" href="#">Напишите нам</a>
         </div>
       </section>
@@ -196,7 +197,7 @@
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="button button-modal-close" type="button">Закрыть</button>
     </section>
 
   </body>
