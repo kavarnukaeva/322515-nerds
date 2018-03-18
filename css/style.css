@@ -11,6 +11,22 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.centerer {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .button {
   font-family: inherit;
   display: inline-block;
@@ -93,6 +109,16 @@ a {
   color: #ffeeee;
 }
 
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-header {
   line-height: 1.9;
   text-transform: uppercase;
@@ -107,6 +133,11 @@ a {
 
 .main-header-logo:focus {
   opacity: 0.3;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-navigation,
@@ -141,7 +172,11 @@ a {
   color: #000;
 }
 
-.features {
+.site-navigation-item:not(:last-child) {
+  margin-right: 47px;
+}
+
+.features-wrapper {
   background-color: #eee;
 }
 
@@ -153,15 +188,36 @@ a {
   color: #000;
 }
 
-.service-item-web{
+.service-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-item {
+  position: relative;
+  width: 300px;
+  padding-top: 170px;
+}
+
+.service-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 145px;
+}
+
+.service-item-web::before {
   background: url("../img/illustration-1.jpg") 0 50% no-repeat;
 }
 
-.service-item-app {
+.service-item-app::before {
   background: url("../img/illustration-2.jpg") 0 50% no-repeat;
 }
 
-.service-item-presentation {
+.service-item-presentation::before {
+  margin-right: 60px;
   background: url("../img/illustration-3.jpg") 0 50% no-repeat;
 }
 
@@ -171,6 +227,21 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   color: #000;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-bottom {
+  display: flex;
+  justify-content: space-between;
 }
 
 .paragraph-secondary {
@@ -195,6 +266,11 @@ a {
 
 .statistics-legend {
   line-height: 1.1;
+}
+
+.partners-list {
+  display: flex;
+  justify-content: space-around;
 }
 
 .partners-logos {
@@ -312,7 +388,14 @@ a {
   background-color: #fff;
 }
 
+.contacts {
+  position: relative;
+}
+
 .contact-info {
+  position: absolute;
+  top: 55px;
+  left: 140px;
   background-color: #fff;
 }
 
@@ -328,6 +411,14 @@ a {
 .tel {
   line-height: 1.1;
   color: #666;
+}
+
+.social-info {
+  display: flex;
+}
+
+.social {
+  display: flex;
 }
 
 .social-btn {
