@@ -1,14 +1,10 @@
 body {
-  margin: 0;
   padding: 0;
 
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  line-height: 1.5;
   color: #283136;
-
-  background-color: #ffffff;
 }
 
 a {
@@ -16,12 +12,13 @@ a {
 }
 
 .button {
-  font: inherit;
+  font-family: inherit;
+  display: inline-block;
 
   text-align: center;
   vertical-align: middle;
-  line-height: 18px;
-  color: #ffffff;
+  line-height: 1.1;
+  color: #fff;
   text-transform: uppercase;
 
   background-color: #fb565a;
@@ -36,7 +33,7 @@ a {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
 
-  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .button-order-app {
@@ -64,8 +61,8 @@ a {
 }
 
 .button-filter {
-  color: #000000;
-  background-color: #eeeeee;
+  color: #000;
+  background-color: #eee;
 }
 
 .button-filter:hover {
@@ -78,30 +75,30 @@ a {
 }
 
 .button-price:focus {
-  color: #ffffff;
+  color: #fff;
 }
 
-.button-modal-close {
+.button-modal-close,
+.button-modal-close:hover,
+.button-modal-close:focus {
   color:#fecccd;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .button-modal-close:hover {
   color: #fb565a;
-  background-color: #ffffff;
 }
 
 .button-modal-close:focus {
   color: #ffeeee;
-  background-color: #ffffff;
 }
 
 .main-header {
-  line-height: 30px;
+  line-height: 1.9;
   text-transform: uppercase;
-  color: #000000;
+  color: #000;
 
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 
 .main-header-logo:hover {
@@ -112,105 +109,92 @@ a {
   opacity: 0.3;
 }
 
-.site-navigation {
+.site-navigation,
+.features-info,
+.service-list,
+.partners-list,
+.catalog-filter ul,
+.sort-by,
+.catalog-list,
+.pagination-list,
+.social {
   list-style: none;
 }
 
 .site-navigation a,
 .cart a {
-  color: #000000;
+  color: #000;
 }
 
-.site-navigation a:hover,
+.site-navigation a:hover:not(.navigation-link-current),
 .cart a:hover {
   color: #fb565a;
 }
 
-.site-navigation a:focus,
+.site-navigation a:focus:not(.navigation-link-current),
 .cart a:focus {
   color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation a:active,
 .cart a:active {
-  color: #000000;
+  color: #000;
 }
 
 .features {
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 
-.features-info {
-  list-style: none;
-}
-
-.features-info-item p:first-child,
-.catalog-container h1 {
+.paragraph-primary,
+.title-first {
   font-size: 55px;
-  line-height: 55px;
+  line-height: 1;
   font-weight: 500;
-  color: #000000;
+  color: #000;
 }
 
-.service-list {
-  list-style: none;
+.service-item-web {
+  background: url("../img/illustration-1.png") 0 50% no-repeat;
 }
 
-.service-list li {
-  background-color: #ffffff;
-  background-image: url("../img/illustration-2.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
+.service-item-app {
+  background: url("../img/illustration-2.png") 0 50% no-repeat;
 }
 
-.service-list li:first-child {
-  background-color: #ffffff;
-  background-image: url("../img/illustration-1.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
+.service-item-presentation {
+  background: url("../img/illustration-3.png") 0 50% no-repeat;
 }
 
-.service-list li:last-child {
-  background-color: #ffffff;
-  background-image: url("../img/illustration-3.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-.service-item h3 {
+.title-third {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 1.25;
   font-weight: 700;
   text-transform: uppercase;
-  color: #000000;
+  color: #000;
 }
 
-.about-us-top p:first-child {
+.paragraph-secondary {
   font-size: 45px;
-  line-height: 45px;
+  line-height: 1;
   font-weight: 500;
-  color: #000000;
+  color: #000;
 }
 
-.about-us-bottom h4 {
+.title-fourth {
   font-weight: 700;
   text-transform: uppercase;
-  color: #000000;
+  color: #000;
 }
 
 .statistics-percentage {
   font-size: 45px;
-  line-height: 10,6px;
+  line-height: 1;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 .statistics-legend {
-  line-height: 18px;
-}
-
-.partners-list {
-  list-style: none;
+  line-height: 1.1;
 }
 
 .partners-logos {
@@ -218,7 +202,7 @@ a {
 }
 
 .partners-logos:hover {
-  opacity: 100;
+  opacity: 1;
 }
 
 .partners-logos:focus {
@@ -230,33 +214,32 @@ a {
 }
 
 .catalog-filter legend,
-.sorting p,
-.catalog-item-info a:first-child {
+.sorting-title,
+.catalog-item-title {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.7;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 .catalog-filter ul {
-  list-style: none;
-  line-height: 20px;
+  line-height: 1.25;
 }
 
 .catalog-filter p,
 .filter-output {
-  line-height: 22px;
+  line-height: 1.4;
   text-transform: uppercase;
 }
 
 .filter-input-range,
 .filter-output {
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 
 .filter-input-radio:hover + label,
 .filter-input-checkbox:hover + label {
-  color: #000000;
+  color: #000;
 }
 
 .filter-input-radio:disabled + label,
@@ -264,17 +247,13 @@ a {
   color: rgba(40, 49, 54, 0.3);
 }
 
-.sorting p {
-  line-height: 18px;
-}
-
-.sorting ul {
-  list-style: none;
+.sorting-title {
+  line-height: 1.1;
 }
 
 .sort-by-item {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.3;
   color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
 }
@@ -286,11 +265,7 @@ a {
 .sort-by-item:focus,
 .sort-by-item:active,
 .sort-by-item-current {
-  color: #000000;
-}
-
-.catalog ul {
-  list-style: none;
+  color: #000;
 }
 
 .catalog-item {
@@ -298,31 +273,27 @@ a {
 }
 
 .catalog-item:hover {
-  box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
+  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
 }
 
 .catalog-item-info {
   text-align: center;
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 
-.catalog-item-info p {
+.catalog-item-description {
   font-size: 16px;
-  line-height: 18px;
-  color: #666666;
-}
-
-.pagination-list {
-  list-style: none;
+  line-height: 1.1;
+  color: #666;
 }
 
 .pagination-item a {
-  line-height: 18px;
+  line-height: 1.1;
   font-weight: 500;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
 
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 
 .pagination-item a:hover {
@@ -331,40 +302,36 @@ a {
 
 .pagination-item a:focus {
   color: rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 3px rgba(0, 0, 0, 0.1);
   background-color: #d5d5d5;
 }
 
 .pagination-item a:active,
 .pagination-item-current {
   border: 3px solid #dbdbdb;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .contact-info {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-.contact-info p:first-child {
+.contact-name{
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.7;
   font-weight: 700;
   text-transform: uppercase;
-  color: #000000;
+  color: #000;
 }
 
-.contact-info p,
-.contact-info .tel {
-  line-height: 18px;
-  color: #666666;
-}
-
-.social-info ul {
-  list-style: none;
+.contact-address,
+.tel {
+  line-height: 1.1;
+  color: #666;
 }
 
 .social-btn {
-  color: #ffffff;
+  color: #fff;
   background-color: #e1e1e1;
 }
 
@@ -377,38 +344,38 @@ a {
   background-color: #d7373b;
 }
 
-.discount-info p:first-child {
+.paragraph-tertiary {
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
-.discount-info p {
-  line-height: 22px;
-  color: #444444;
+.discount-info-description {
+  line-height: 1.4;
+  color: #444;
 }
 
 .modal-feedback {
-  background-color: #ffffff;
-  }
+  background-color: #fff;
+}
 
-.modal-feedback h2 {
+.title-second {
   font-size: 45px;
-  line-height: 45px;
+  line-height: 1;
   font-weight: 500;
-  color: #000000;
+  color: #000;
 }
 .feedback-item label {
-  line-height: 18px;
+  line-height: 1.1;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 .feedback-item input,
 .feedback-item textarea {
   font: inherit;
-  line-height: 18px;
+  line-height: 1.1;
   color: rgba(68, 68, 68, 0.5);
 
   background-color: transparent;
@@ -422,8 +389,8 @@ a {
 
 .feedback-item input:focus,
 .feedback-item textarea:focus {
-  color: #444444;
-  border-color: #000000;
+  color: #444;
+  border-color: #000;
 }
 
 .feedback-item input:invalid,
