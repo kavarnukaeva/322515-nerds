@@ -153,16 +153,16 @@ a {
   color: #000;
 }
 
-.service-item-web {
-  background: url("../img/illustration-1.png") 0 50% no-repeat;
+.service-item-web{
+  background: url("../img/illustration-1.jpg") 0 50% no-repeat;
 }
 
 .service-item-app {
-  background: url("../img/illustration-2.png") 0 50% no-repeat;
+  background: url("../img/illustration-2.jpg") 0 50% no-repeat;
 }
 
 .service-item-presentation {
-  background: url("../img/illustration-3.png") 0 50% no-repeat;
+  background: url("../img/illustration-3.jpg") 0 50% no-repeat;
 }
 
 .title-third {
