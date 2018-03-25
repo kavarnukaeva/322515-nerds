@@ -36,9 +36,9 @@
           <input class="visually-hidden" type="radio" id="product-2" name="toggle">
           <input class="visually-hidden" type="radio" id="product-3" name="toggle">
           <div class="slider-controls">
-            <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
-            <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
-            <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+            <label class="slider-controls-item slider-controls-item--1" for="product-1"><span class="visually-hidden">Первый переключатель</span></label>
+            <label class="slider-controls-item slider-controls-item--2" for="product-2"><span class="visually-hidden">Второй переключатель</span></label>
+            <label class="slider-controls-item slider-controls-item--3" for="product-3"><span class="visually-hidden">Третий переключатель</span></label>
           </div>
           <ul class="features-info reset-list">
             <li class="features-info-item">
@@ -170,21 +170,26 @@
     <section class="modal modal-feedback">
       <h2 class="title-second">Напишите нам</h2>
       <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
-        <p class="feedback-item">
-          <label for="fullname-field">Ваше имя:</label>
-          <input type="text" name="fullname" id="fullname-field" placeholder="Имя Фамилия">
-        </p>
-        <p class="feedback-item">
-          <label for="email-field">Ваш e-mail:</label>
-          <input type="email" name="email" id="email-field" placeholder="email@example.com">
-        </p>
-        <p class="feedback-item">
-          <label for="message-field">Текст письма:</label>
-          <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="button" type="submit">Отправить</button>
+        <div class="feedback-wrapper">
+          <p class="feedback-item">
+            <label for="fullname-field">Ваше имя:</label>
+            <input type="text" name="fullname" id="fullname-field" placeholder="Имя Фамилия">
+          </p>
+          <p class="feedback-item">
+            <label for="email-field">Ваш e-mail:</label>
+            <input type="email" name="email" id="email-field" placeholder="email@example.com">
+          </p>
+          <p class="feedback-item">
+            <label for="message-field">Текст письма:</label>
+            <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
+          </p>
+        </div>
+        <button class="button button-submit" type="submit">Отправить</button>
       </form>
-      <button class="button-modal-close" type="button">Закрыть</button>
+      <button class="button-modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
+      </button>
     </section>
   </body>
 </html>
