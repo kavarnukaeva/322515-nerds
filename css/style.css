@@ -1,7 +1,9 @@
-*,
-*::before,
-*::after {
+html {
   box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -682,13 +684,6 @@ input[type="radio"].visually-hidden {
   line-height: 1.25;
 }
 
-/* .catalog-filter p {
-  margin: 0;
-
-  line-height: 1.4;
-  text-transform: uppercase;
-}*/
-
 .filter-item {
   margin: 0;
   margin-bottom: 55px;
@@ -709,10 +704,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 16px;
 }
 
-.price-range legend {
-  margin-bottom: 16px;
-}
-
 .filter-option {
   margin-bottom: 20px;
   padding-left: 35px;
@@ -729,15 +720,15 @@ input[type="radio"].visually-hidden {
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 48px;
 }
 
 .range-controls {
   position: relative;
 
   margin-bottom: 15px;
-  padding-top: 39px;
-  padding-bottom: 39px;
+  padding-top: 38px;
+  padding-bottom: 40px;
   padding-right: 20px;
   padding-left: 20px;
 
@@ -760,11 +751,11 @@ input[type="radio"].visually-hidden {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 28px;
   left: 0;
 
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
   padding: 0;
 
   border: 8px solid #ffffff;
@@ -796,8 +787,8 @@ input[type="radio"].visually-hidden {
 
 .price-controls input {
   width: 80px;
-  margin-left: 10px;
-  padding: 8px 10px;
+  margin-left: 8px;
+  padding: 9px 10px;
 
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
@@ -1109,15 +1100,17 @@ input[type="radio"].visually-hidden {
 
 .contacts iframe {
   width:100%;
+
+  border: none;
 }
 
 .contact-info {
   position: absolute;
   top: 55px;
-  left: 140px;
+  left: calc(50% - 1160px / 2);
 
   width: 319px;
-  padding: 47px 50px;
+  padding: 48px 50px;
 
   background-color: #fff;
 }
@@ -1156,7 +1149,7 @@ input[type="radio"].visually-hidden {
 
 .write-us {
   width: 219px;
-  padding: 17px 44px;
+  padding: 16px 44px;
 }
 
 .social-info {
@@ -1297,6 +1290,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-item textarea {
+  max-width: 100%;
   min-height: 118px;
   margin-top: 7px;
   padding-top: 10px;
@@ -1311,6 +1305,7 @@ input[type="radio"].visually-hidden {
 .feedback-item textarea:focus {
   color: #444;
   border-color: #000;
+  outline: none;
 }
 
 .feedback-item input:invalid,
@@ -1322,25 +1317,24 @@ input[type="radio"].visually-hidden {
 .button-modal-close {
   position: absolute;
   top: 77px;
-  right: 83px;
+  right: 90px;
 
   display: inline-block;
+  width: 21px;
+  height: 21px;
 
-  background-color: #fff;
+  background: #fff url("../img/close-cross.svg") 0 0 no-repeat;
+  opacity: 0.3;
   border: none;
 
   cursor: pointer;
 }
 
-.button-modal-close path {
-  fill: rgba(251, 86, 90, 0.3);
+.button-modal-close:hover,
+.button-modal-close:focus {
+  opacity: 1;
 }
 
-.button-modal-close:hover path,
-.button-modal-close:focus path {
-  fill: #fb565a;
-}
-
-.button-modal-close:active path {
-  fill: rgba(251, 86, 90, 0.3);
+.button-modal-close:active {
+  opacity: 0.1;
 }
