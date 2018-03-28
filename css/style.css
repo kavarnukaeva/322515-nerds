@@ -888,6 +888,10 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
 }
 
+.filter-input:disabled + label {
+  cursor: not-allowed;
+}
+
 .catalog-container {
   width: 760px;
 }
@@ -1218,6 +1222,16 @@ input[type="radio"].visually-hidden {
 
 /* Модальное окно */
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .modal-feedback {
   position: fixed;
   top: 50%;
@@ -1228,12 +1242,19 @@ input[type="radio"].visually-hidden {
   min-height: 590px;
   padding-top: 65px;
   padding-right: 100px;
+  padding-bottom: 84px;
   padding-left: 98px;
 
   background-color: #fff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 
   transform: translate(-50%, -50%);
+}
+
+.modal-show {
+  display: block;
+
+  animation: fadeIn 0.6s;
 }
 
 .title-second {
