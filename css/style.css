@@ -175,12 +175,12 @@ input[type="radio"].visually-hidden {
   margin-right: 202px;
 }
 
-.main-header-logo:hover,
-.main-header-logo:focus {
+.main-header-logo:hover:not(.logo-main),
+.main-header-logo:focus:not(.logo-main) {
   opacity: 0.8;
 }
 
-.main-header-logo:active {
+.main-header-logo:active:not(.logo-main) {
   opacity: 0.3;
 }
 
@@ -1153,7 +1153,7 @@ input[type="radio"].visually-hidden {
 
 .write-us {
   width: 219px;
-  padding: 16px 44px;
+  padding: 16px 43px;
 }
 
 .social-info {
@@ -1254,7 +1254,7 @@ input[type="radio"].visually-hidden {
 .modal-show {
   display: block;
 
-  animation: fadeIn 0.6s;
+  animation: fadeIn 0.4s;
 }
 
 .title-second {
