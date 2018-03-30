@@ -12,6 +12,17 @@
   var fullname = popup.querySelector("[name=fullname]");
   var email = popup.querySelector("[name=email]");
   var message = popup.querySelector("[name=message]");
+  var submitBtn = form.querySelector(".button-submit");
+
+  var toggleInvalidClass = function(collection, toggleFlag) {
+    var action = toggleFlag ? "add" : "remove";
+
+    [].forEach.call(collection, function(element) {
+      if (element.tagName.toLowerCase() === "input" ||
+        element.tagName.toLowerCase() === "textarea")
+        element.classList[action]("invalid");
+    });
+  };
 
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -28,8 +39,15 @@
     if (!form.checkValidity()) {
       evt.preventDefault();
     } else {
+      toggleInvalidClass(form.elements, false);
       localStorage.setItem("fullname", fullname.value);
       localStorage.setItem("email", email.value);
+    }
+  });
+
+  submitBtn.addEventListener("click", function() {
+    if (!form.checkValidity()) {
+      toggleInvalidClass(form.elements, true);
     }
   });
 

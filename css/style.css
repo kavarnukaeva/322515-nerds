@@ -1308,6 +1308,7 @@ input[type="radio"].visually-hidden {
 
   background-color: transparent;
   border: 2px solid #d7dcde;
+  border-radius: 3px;
 }
 
 .feedback-item textarea {
@@ -1329,10 +1330,9 @@ input[type="radio"].visually-hidden {
   outline: none;
 }
 
-.feedback-item input:invalid,
-.feedback-item textarea:invalid {
-  color: #e74246;
-  border-color: #e74246;
+.feedback input.invalid,
+textarea.invalid {
+  border: 2px solid #e74246;
 }
 
 .button-modal-close {
