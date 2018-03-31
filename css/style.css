@@ -1031,7 +1031,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   background-color: #eee;
 
-  overflow-y: scroll;
+  overflow: auto;
 }
 
 .catalog-item-info h3 {
