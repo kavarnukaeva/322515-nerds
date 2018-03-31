@@ -5,11 +5,11 @@
     <title>Каталог Nёrds</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="header-wrapper centerer">
+      <div class="header-wrapper centerer centerer-background">
         <nav class="main-navigation">
           <a class="main-header-logo" href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
@@ -25,7 +25,7 @@
           <a href="#">Корзина</a>
         </div>
       </div>
-      <div class="title-wrapper centerer">
+      <div class="title-wrapper centerer centerer-background">
         <h1 class="title-first">Магазин готовых шаблонов</h1>
       </div>
     </header>
@@ -210,7 +210,11 @@
     </footer>
 
     <section class="modal modal-feedback">
-      <h2 class="title-second">Напишите нам</h2>
+      <h2 class="title-second">Напишите нам
+        <button class="button-modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </h2>
       <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
         <div class="feedback-wrapper">
           <p class="feedback-item">
@@ -228,10 +232,7 @@
         </div>
         <button class="button button-submit" type="submit">Отправить</button>
       </form>
-      <button class="button-modal-close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/script-min.js"></script>
   </body>
 </html>

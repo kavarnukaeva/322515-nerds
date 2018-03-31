@@ -5,11 +5,11 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="header-wrapper centerer">
+      <div class="header-wrapper centerer centerer-background">
         <nav class="main-navigation">
           <a class="main-header-logo logo-main">
            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
@@ -30,7 +30,7 @@
     <main class="main-container">
       <h1 class="visually-hidden">Веб-студия Нёрдс</h1>
       <div class="features-wrapper">
-        <section class="features centerer">
+        <section class="features centerer centerer-background">
           <h2 class="visually-hidden">Преимущества</h2>
           <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
           <input class="visually-hidden" type="radio" id="product-2" name="toggle">
@@ -168,7 +168,11 @@
     </footer>
 
     <section class="modal modal-feedback">
-      <h2 class="title-second">Напишите нам</h2>
+      <h2 class="title-second">Напишите нам
+        <button class="button-modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </h2>
       <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
         <div class="feedback-wrapper">
           <p class="feedback-item">
@@ -186,10 +190,7 @@
         </div>
         <button class="button button-submit" type="submit">Отправить</button>
       </form>
-      <button class="button-modal-close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/script-min.js"></script>
   </body>
 </html>

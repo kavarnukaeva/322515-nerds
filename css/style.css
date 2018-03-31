@@ -50,8 +50,14 @@ input[type="radio"].visually-hidden {
 }
 
 .centerer {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.centerer-background {
+  background-color: #eee;
 }
 
 .button {
@@ -257,18 +263,19 @@ input[type="radio"].visually-hidden {
 /* Слайдер */
 
 .features-wrapper {
-  position: relative;
-
   margin-bottom: 80px;
 
   background-color: #eee;
+}
+
+.features {
+  position: relative;
 }
 
 .slider-controls {
   position: absolute;
   left: 50%;
   bottom: 96px;
-  z-index: 100;
 
   display: flex;
   justify-content: space-between;
@@ -972,25 +979,25 @@ input[type="radio"].visually-hidden {
 
 .catalog-item {
   position: relative;
-
   width: 360px;
-  height: 616px;
+  height: 615px;
   margin-bottom: 33px;
-  padding-top: 41px;
+  padding-top: 40px;
+  border: 1px solid rgba(0, 1, 1, 0.1);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .catalog-item::before {
   content: "";
-
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 40px;
-
-  background: url("../img/browser.svg") 0 50% no-repeat;
+  background: url('../img/browser.svg') 0 50% no-repeat;
   opacity: 0.12;
+  border-radius: 0 4px 0 0;
 }
 
 .catalog-item:hover,
@@ -1034,10 +1041,6 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 1.1;
   color: #666;
-}
-
-.catalog-item img {
-  border: 1px solid rgba(0, 1, 1, 0.1);
 }
 
 /* Пагинация */
@@ -1095,6 +1098,7 @@ input[type="radio"].visually-hidden {
 .contacts {
   position: relative;
 
+  min-width: 1160px;
   height: 415px;
 
   background-image: url("../img/map.jpg");
@@ -1238,8 +1242,10 @@ input[type="radio"].visually-hidden {
   left: 50%;
 
   display: none;
-  width: 960px;
-  min-height: 590px;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+
   padding-top: 65px;
   padding-right: 100px;
   padding-bottom: 84px;
@@ -1258,6 +1264,7 @@ input[type="radio"].visually-hidden {
 }
 
 .title-second {
+  width: 753px;
   margin: 0;
   margin-bottom: 23px;
 
@@ -1335,20 +1342,28 @@ textarea.invalid {
   border: 2px solid #e74246;
 }
 
+.modal-close-wrapper {
+  position: relative;
+}
+
 .button-modal-close {
-  position: absolute;
-  top: 77px;
-  right: 90px;
+  float: right;
+
+  bottom: 35px;
+  right: -10px;
 
   display: inline-block;
   width: 21px;
   height: 21px;
+  margin-top: 12px;
 
   background: #fff url("../img/close-cross.svg") 0 0 no-repeat;
   opacity: 0.3;
   border: none;
 
   cursor: pointer;
+
+  transform: translateX(19px);
 }
 
 .button-modal-close:hover,
