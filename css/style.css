@@ -1022,7 +1022,7 @@ input[type="radio"].visually-hidden {
   left: 0;
 
   display: none;
-  max-height: 230px;
+  max-height: 100%;
   padding-top: 7px;
   padding-right: 74px;
   padding-bottom: 41px;
