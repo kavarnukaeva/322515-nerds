@@ -39,6 +39,7 @@
     if (!form.checkValidity()) {
       evt.preventDefault();
     } else {
+      popup.classList.remove("error");
       toggleInvalidClass(form.elements, false);
       localStorage.setItem("fullname", fullname.value);
       localStorage.setItem("email", email.value);
@@ -47,6 +48,9 @@
 
   submitBtn.addEventListener("click", function() {
     if (!form.checkValidity()) {
+      popup.classList.remove("error");
+      popup.offsetWidth;
+      popup.classList.add("error");
       toggleInvalidClass(form.elements, true);
     }
   });
